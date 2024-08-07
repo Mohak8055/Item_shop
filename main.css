@@ -1,0 +1,197 @@
+body{
+    color: beige;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg,#151616, #660820);
+    height: 100vh;
+    overflow: hidden;
+  }
+footer
+{
+    margin: 5%;
+}
+li{
+    margin: 1em;
+}
+
+h2{
+    color: beige;
+}
+
+.q {
+    position: relative;
+    background-color: #a23485;
+    border: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 2px;
+    width: 150px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .q:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 30%;
+    padding-left: 35%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .q:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+.cen{
+    border-radius: 4px;
+    background-color: #32312d;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    
+    position: absolute;
+    top: 50%;
+    left: 64%;
+
+}
+
+.cen span {
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.cen span::after{
+    content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.cen:hover span{
+    padding-right: 20px;
+}
+
+.cen:hover span::after{
+    opacity: 2;
+    right: 0;
+}
+
+#cap-1{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    color:white;
+    font-size: 3vw;
+    animation-name: caption-fade;
+    animation-duration: 3s;
+  }
+
+  @keyframes caption-fade {
+    0% {opacity: 0; top: 0}
+    100% {opacity: 1; top: 40%}
+  }
+  
+.button {
+  border-radius: 4px;
+  background-color: #32312d;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 2;
+  right: 0;
+}
+
+img{
+    height: 50%;
+    width: 50%;
+    margin-top: 1%;
+}
+.row
+{
+    margin-left: 8%;
+}
+.col-xxl-2
+{
+    height: 300px;
+    width: 300px;
+border: 1px solid rgba(4, 163, 199, 0.741);
+box-shadow: 5px 5px 5px 5px rgb(190, 9, 106);
+margin: 10px;
+}
+
+.col-xxl-1
+{
+    height: 400px;
+    width: 310px; 
+border: 1px solid rgb(158, 142, 142);
+box-shadow: 5px 5px 5px 5px black;
+margin: 10px;
+}
+#products
+{
+    display: grid; 
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    grid-template-rows: 50% 50% 50% 50% 50% ;
+    gap: 2%;
+    margin-left: 15%;
+}
+
+#griditem{
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+padding: 0%;  
+}

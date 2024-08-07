@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shoping Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body onload="ObjectThing(), GetItemsFromLocalStorage(),GetMoms(localStorage.Price*localStorage.amount),GetShipment(), GetTotal()">
+   <h1>Your Shoping Cart</h1>
+    <p id ="Products"> </p>
+    <p id ="moms"></p>
+    <p id ="shipment"></p>
+    <p id="total"></p>
+    <button  class="button" onclick ="Checkout(1)"><span>Back to Store</span></button>
+    <button class="button" onclick ="Checkout(3)"><span>Proceed to Checkout</span></button>
+    <button class="button" onclick ="PlayMusic()"><span>Play Music</span></button>
+
+</body>
+</html>
